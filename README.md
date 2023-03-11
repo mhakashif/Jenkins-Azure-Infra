@@ -6,13 +6,14 @@ Prerequisites
 Jenkins installed and running
 Azure account
 Azure CLI installed on Jenkins node
+
 Pipeline Steps
 Azure Login: Login to Azure using the service principal created with the credentials specified in the Jenkins environment variables.
 Create a Resource Group: Create an Azure resource group with the specified name and location.
 Create a Storage Account: Create an Azure storage account with the specified name, location, and SKU.
 Create a vNet: Create an Azure virtual network with the specified name, address prefix, and subnet.
-Environment Variables
 
+Environment Variables
 The following environment variables must be set in Jenkins:
 AZURE_CLIENT_ID: Azure service principal client ID
 AZURE_CLIENT_SECRET: Azure service principal client secret
